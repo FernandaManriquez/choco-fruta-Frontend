@@ -9,7 +9,7 @@ Sistema web full-stack para la gestión integral de una tienda virtual especiali
 
 ## 🚀 Inicio Rápido (Frontend)
 - Repositorio FrontEnd: https://github.com/FernandaManriquez/choco-fruta-Frontend.git
-- Repositorio Backend: https://github.com/TU_USUARIO/TU_REPO_BACKEND
+- Repositorio Backend:  https://github.com/FernandaManriquez/chocofruta-Backend.git
 
 #### Instrucciones de instalación (Frontend)
 - `npm install`
