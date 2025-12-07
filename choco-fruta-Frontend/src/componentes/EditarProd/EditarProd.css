@@ -1,0 +1,90 @@
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #b07d62 0%, #8d7964 100%);
+    color: white;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 15px 20px;
+    border: none;
+}
+
+.card-header h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-label {
+    color: #7c4f32;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid #e2cfc3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #b07d62;
+    box-shadow: 0 0 0 0.2rem rgba(176, 125, 98, 0.15);
+}
+
+.form-control.bg-light {
+    background-color: #f8f9fa;
+}
+
+.input-group-text {
+    background-color: #e2cfc3;
+    border: 2px solid #e2cfc3;
+    color: #7c4f32;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #b07d62 0%, #8d7964 100%);
+    border: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(141, 121, 100, 0.3);
+}
+
+.btn-secondary {
+    background: white;
+    border: 2px solid #8d7964;
+    color: #8d7964;
+}
+
+.btn-secondary:hover {
+    background-color: #8d7964;
+    color: white;
+}
+
+.alert {
+    border-radius: 10px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1);
+}

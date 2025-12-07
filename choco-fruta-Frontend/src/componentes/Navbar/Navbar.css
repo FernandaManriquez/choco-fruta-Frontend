@@ -1,0 +1,192 @@
+.navbar-light {
+    background-color: #8d7964 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* ===========================
+   NAVBAR BRAND
+   =========================== */
+.navbar-brand {
+    font-weight: bold;
+    color: #e2cfc3 !important;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* ===========================
+   NAV LINKS
+   =========================== */
+.nav-link {
+    color: #e2cfc3 !important;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 15px !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: #b07d62 !important;
+    color: #fff !important;
+}
+
+/* ===========================
+   CARRITO DE COMPRAS
+   =========================== */
+.carrito-link {
+    position: relative;
+}
+
+.carrito-badge {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.carrito-link:hover .carrito-badge {
+    background-color: #c82333;
+}
+
+/* ===========================
+   USER INFO
+   =========================== */
+.user-info {
+    cursor: default;
+    opacity: 0.9;
+}
+
+.user-info:hover {
+    transform: none !important;
+    opacity: 1;
+}
+
+/* ===========================
+   LOGOUT BUTTON
+   =========================== */
+.btn-logout {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===========================
+   NAVBAR TOGGLER
+   =========================== */
+.navbar-toggler {
+    border-color: #e2cfc3;
+    padding: 8px 12px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(226, 207, 195, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ===========================
+   RESPONSIVE - ESCRITORIO
+   =========================== */
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-link {
+        white-space: nowrap;
+    }
+}
+
+/* ===========================
+   RESPONSIVE - MÓVIL
+   =========================== */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(141, 121, 100, 0.95);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+        padding: 12px 15px !important;
+        width: 100%;
+        text-align: left;
+    }
+
+    .user-info {
+        margin: 5px 0;
+        pointer-events: none;
+    }
+
+    .btn-logout {
+        text-align: left;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .carrito-badge {
+        right: auto;
+        left: 140px;
+    }
+}

@@ -1,0 +1,217 @@
+.contacto-content {
+    padding: 0;
+    width: 100%;
+}
+
+/* Forzar ancho completo sin padding lateral en el contenedor fluido */
+.contacto-content.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Quitar gutters laterales del grid interno para que estire más */
+.contacto-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.contacto-content .col-md-6,
+.contacto-content .col-md {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contacto-content h2 {
+    text-align: center;
+    background-color: #e2cfc3;
+    color: #7c4f32;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 0 40px 0;
+}
+
+.info-contacto {
+    background-color: rgba(226, 207, 195, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-contacto h3 {
+    color: #7c4f32;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #b07d62;
+    min-width: 30px;
+}
+
+.info-item strong {
+    color: #7c4f32;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #3a2212;
+    margin: 0;
+}
+
+.formulario-contacto {
+    background-color: #e2cfc3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h3 {
+    color: #7c4f32;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #7c4f32;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #b07d62;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #7c4f32;
+    box-shadow: 0 0 0 3px rgba(124, 79, 50, 0.1);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    color: #8d7964;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error-text {
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-enviar {
+    flex: 1;
+    background: linear-gradient(135deg, #b07d62 0%, #8d7964 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-enviar:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(141, 121, 100, 0.3);
+}
+
+.btn-enviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-limpiar {
+    flex: 1;
+    background: white;
+    color: #8d7964;
+    border: 2px solid #8d7964;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-limpiar:hover:not(:disabled) {
+    background-color: #8d7964;
+    color: white;
+}
+
+.btn-limpiar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .contacto-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-contacto,
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}

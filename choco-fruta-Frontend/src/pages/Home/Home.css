@@ -1,0 +1,261 @@
+.home-content {
+    padding: 30px 20px;
+}
+
+/* Encabezado de la tabla (fila negra) */
+.table thead,
+.table-dark th {
+  background-color: #7e6e64 !important;  
+  color: #dccec5 !important;             
+}
+
+.bienvenida-section {
+    background: linear-gradient(135deg, #e2cfc3 0%, #d4b5a0 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(124, 79, 50, 0.2);
+}
+
+.bienvenida-section h1 {
+    color: #7c4f32;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #3a2212;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.carousel-section {
+    margin-bottom: 50px;
+}
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(141, 121, 100, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #e2cfc3;
+}
+
+.carousel-caption p {
+    color: #e2cfc3;
+}
+
+/* Estilos para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(176, 125, 98, 0.8);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(124, 79, 50, 0.9);
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #b07d62;
+    border: 2px solid white;
+    opacity: 0.7;
+}
+
+.carousel-indicators button.active {
+    background-color: #7c4f32;
+    opacity: 1;
+}
+
+.productos-destacados {
+    margin-bottom: 50px;
+}
+
+.productos-destacados h2 {
+    text-align: center;
+    background-color: #e2cfc3;
+    color: #7c4f32;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.producto-card {
+    border: 2px solid #e2cfc3;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background-color: white;
+}
+
+.producto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto-card .card-body {
+    padding: 25px;
+    background-color: white;
+}
+
+.producto-card .card-title {
+    font-weight: bold;
+    color: #7c4f32;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.producto-card .card-text {
+    color: #3a2212;
+    text-align: center;
+}
+
+.beneficios-section {
+    background: linear-gradient(135deg, #dcc4b5 0%, #e2cfc3 100%);
+    padding: 60px 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 8px 25px rgba(124, 79, 50, 0.15);
+}
+
+.beneficios-section h2 {
+    color: #7c4f32;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.beneficio-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.beneficio-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #b07d62;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.beneficio-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.beneficio-icon:hover {
+    transform: scale(1.1);
+    background-color: #7c4f32;
+}
+
+.beneficios-section h4 {
+    font-weight: bold;
+    color: #7c4f32;
+    margin-bottom: 15px;
+}
+
+.beneficios-section p {
+    color: #3a2212;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .bienvenida-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-control-prev {
+        left: 10px;
+    }
+    
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .productos-destacados h2 {
+        font-size: 1.5rem;
+    }
+    
+    .beneficios-section {
+        padding: 40px 20px;
+    }
+    
+    .beneficios-section h2 {
+        font-size: 1.8rem;
+    }
+}

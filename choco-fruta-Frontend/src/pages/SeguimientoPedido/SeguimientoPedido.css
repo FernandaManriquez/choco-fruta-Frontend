@@ -1,0 +1,161 @@
+.seguimiento-content {
+    padding: 30px 20px;
+}
+
+.seguimiento-title {
+    text-align: center;
+    color: #7d9b6e;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+}
+
+.confirmacion-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icono-exito {
+    text-align: center;
+    font-size: 5rem;
+    color: #7d9b6e;
+    margin-bottom: 20px;
+}
+
+.confirmacion-card h2 {
+    color: #7c4f32;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.confirmacion-card > p {
+    text-align: center;
+    color: #8d7964;
+    margin-bottom: 30px;
+}
+
+.numero-pedido {
+    background: linear-gradient(135deg, #e2cfc3 0%, #d4b5a0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.numero-pedido strong {
+    display: block;
+    color: #7c4f32;
+    margin-bottom: 10px;
+}
+
+.numero {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7c4f32;
+}
+
+.detalles-pedido {
+    margin: 30px 0;
+}
+
+.detalle-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #e2cfc3;
+}
+
+.detalle-item i {
+    font-size: 1.5rem;
+    color: #b07d62;
+}
+
+.detalle-item strong {
+    display: block;
+    color: #7c4f32;
+    margin-bottom: 5px;
+}
+
+.detalle-item span {
+    color: #3a2212;
+}
+
+.total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7d9b6e !important;
+}
+
+.productos-pedido {
+    margin: 30px 0;
+}
+
+.productos-pedido h3 {
+    color: #7c4f32;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2cfc3;
+}
+
+.producto-pedido {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e2cfc3;
+}
+
+.acciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-imprimir,
+.btn-inicio {
+    flex: 1;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-imprimir {
+    background: white;
+    color: #8d7964;
+    border: 2px solid #8d7964;
+}
+
+.btn-imprimir:hover {
+    background: #8d7964;
+    color: white;
+}
+
+.btn-inicio {
+    background: linear-gradient(135deg, #b07d62 0%, #8d7964 100%);
+    color: white;
+}
+
+.btn-inicio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(141, 121, 100, 0.3);
+}
+
+@media (max-width: 768px) {
+    .confirmacion-card {
+        padding: 25px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+}

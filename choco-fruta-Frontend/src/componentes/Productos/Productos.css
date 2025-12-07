@@ -1,0 +1,365 @@
+/* Dashboard Title - Mismo estilo que Dashboard */
+.dashboard-content {
+    padding: 30px 0;
+}
+
+.dashboard-title {
+    text-align: center;
+    background-color: #e2cfc3;
+    color: #7c4f32;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.mi-tabla {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Filtros y búsqueda */
+.input-group-text {
+    background-color: #e2cfc3;
+    border-color: #b07d62;
+    color: #7c4f32;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #e2cfc3;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #b07d62;
+    box-shadow: 0 0 0 0.2rem rgba(176, 125, 98, 0.25);
+}
+
+/* Tabla */
+.table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #8d7964;
+}
+
+.table thead th {
+    color: #e2cfc3;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e2cfc3;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(226, 207, 195, 0.2);
+    transform: scale(1.01);
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td .d-flex.justify-content-between {
+    gap: 12px;
+}
+
+/* Badge de stock bajo */
+.badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.badge.bg-warning {
+    background-color: #e8c18f !important;
+    color: #3a2212;
+}
+
+.badge.bg-primary {
+    background-color: #b07d62 !important;
+}
+
+.badge.bg-info {
+    background-color: #8d9db0 !important;
+}
+
+.badge.bg-success {
+    background-color: #7d9b6e !important;
+}
+
+.badge.bg-danger {
+    background-color: #c67b5c !important;
+}
+
+.badge.bg-secondary {
+    background-color: #8d7964 !important;
+}
+
+/* Botones */
+.btn {
+    font-size: 13px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón Crear Producto */
+.btn-success {
+    background-color: #7d9b6e;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #6b8a5d;
+}
+
+/* Botón Editar - AZUL/GRIS (igual a Usuarios) */
+.btn-outline-primary {
+    background-color: #4f7ea1 !important;
+    border: 2px solid #4f7ea1 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3f6f91 !important;
+    border-color: #3f6f91 !important;
+    color: white !important;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    background-color: #3f6f91 !important;
+    border-color: #3f6f91 !important;
+    color: white !important;
+}
+
+.btn-sm.btn-outline-primary {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* Botón Desactivar - AMARILLO sólido */
+.btn-outline-warning {
+    background-color: #f6c23e !important;
+    border: 2px solid #f6c23e !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: #e0ad2f !important;
+    border-color: #e0ad2f !important;
+}
+
+/* Botón Desactivar - TERRACOTA (igual a Usuarios) */
+.btn-desactivar {
+    --bs-btn-bg: #c86b55;
+    --bs-btn-border-color: #c86b55;
+    --bs-btn-hover-bg: #a95846;
+    --bs-btn-hover-border-color: #a95846;
+    --bs-btn-active-bg: #91483a;
+    --bs-btn-active-border-color: #91483a;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #fff;
+    background-color: var(--bs-btn-bg) !important;
+    border-color: var(--bs-btn-border-color) !important;
+    color: var(--bs-btn-color) !important;
+    border-radius: 12px !important;
+    box-shadow: none;
+}
+
+.btn-desactivar:hover { background-color: var(--bs-btn-hover-bg) !important; border-color: var(--bs-btn-hover-border-color) !important; color: var(--bs-btn-hover-color) !important; }
+.btn-desactivar:active, .btn-desactivar:focus { background-color: var(--bs-btn-active-bg) !important; border-color: var(--bs-btn-active-border-color) !important; color: var(--bs-btn-active-color) !important; }
+
+/* Botón Activar - VERDE FUERTE (igual a Usuarios) */
+.btn-success-strong {
+    --bs-btn-bg: #15803d;
+    --bs-btn-border-color: #15803d;
+    --bs-btn-hover-bg: #166534;
+    --bs-btn-hover-border-color: #166534;
+    --bs-btn-color: #fff;
+    background-color: var(--bs-btn-bg) !important;
+    border-color: var(--bs-btn-border-color) !important;
+    color: var(--bs-btn-color) !important;
+    box-shadow: none;
+}
+
+.btn-success-strong:hover { background-color: var(--bs-btn-hover-bg) !important; border-color: var(--bs-btn-hover-border-color) !important; color: #fff !important; }
+
+/* Botón Eliminar - ROJO INTENSO (igual a Usuarios) */
+.btn-eliminar {
+    --bs-btn-bg: #b00020;
+    --bs-btn-border-color: #b00020;
+    --bs-btn-hover-bg: #8e001a;
+    --bs-btn-hover-border-color: #8e001a;
+    --bs-btn-active-bg: #7a0016;
+    --bs-btn-active-border-color: #7a0016;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #fff;
+    background-color: var(--bs-btn-bg) !important;
+    border-color: var(--bs-btn-border-color) !important;
+    color: var(--bs-btn-color) !important;
+    border-radius: 12px !important;
+    box-shadow: none;
+}
+
+.btn-eliminar:hover { background-color: var(--bs-btn-hover-bg) !important; border-color: var(--bs-btn-hover-border-color) !important; color: var(--bs-btn-hover-color) !important; }
+.btn-eliminar:active, .btn-eliminar:focus { background-color: var(--bs-btn-active-bg) !important; border-color: var(--bs-btn-active-border-color) !important; color: var(--bs-btn-active-color) !important; }
+
+/* Botón Activar - VERDE contorno */
+.btn-outline-success {
+    background-color: #7d9b6e !important;
+    border: 2px solid #7d9b6e !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #6b8c5f !important;
+}
+
+/* Botón Eliminar - ROJO contorno */
+.btn-outline-danger {
+    background-color: #b7554c !important; /* terracotta */
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: #a84a40 !important;
+}
+
+/* Botón Desactivar - TERRACOTA con variables Bootstrap */
+.btn-desactivar {
+    --bs-btn-bg: #c86b55;
+    --bs-btn-border-color: #c86b55;
+    --bs-btn-hover-bg: #a95846;
+    --bs-btn-hover-border-color: #a95846;
+    --bs-btn-active-bg: #91483a;
+    --bs-btn-active-border-color: #91483a;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #fff;
+    background-color: var(--bs-btn-bg) !important;
+    border-color: var(--bs-btn-border-color) !important;
+    color: var(--bs-btn-color) !important;
+    box-shadow: none;
+}
+
+.btn-desactivar:hover { background-color: var(--bs-btn-hover-bg) !important; border-color: var(--bs-btn-hover-border-color) !important; color: var(--bs-btn-hover-color) !important; }
+.btn-desactivar:active, .btn-desactivar:focus { background-color: var(--bs-btn-active-bg) !important; border-color: var(--bs-btn-active-border-color) !important; color: var(--bs-btn-active-color) !important; }
+
+/* Botón Desactivado */
+.btn-secondary {
+    background-color: #8d7964;
+    border: none;
+    opacity: 0.7;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7c6b5a;
+}
+
+/* Precio */
+.text-success {
+    color: #7d9b6e !important;
+}
+
+.fw-bold {
+    font-weight: bold !important;
+}
+
+/* Estados */
+.badge.bg-success {
+    background-color: #7d9b6e !important;
+}
+
+.badge.bg-secondary {
+    background-color: #8d7964 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mi-tabla {
+        padding: 15px;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        padding: 10px 5px;
+    }
+    
+    .btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+}
+
+/* Animación para filas inactivas */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+/* Botón Activar - VERDE FUERTE (local, sobre Bootstrap) */
+.btn-success-strong {
+    /* Variables Bootstrap para .btn */
+    --bs-btn-bg: #15803d;
+    --bs-btn-border-color: #15803d;
+    --bs-btn-hover-bg: #166534;
+    --bs-btn-hover-border-color: #166534;
+    --bs-btn-color: #fff;
+
+    /* Garantizar sólido */
+    background-color: #15803d !important;
+    border-color: #15803d !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+.btn-success-strong:hover {
+    background-color: #166534 !important;
+    border-color: #166534 !important;
+    color: #fff !important;
+}
