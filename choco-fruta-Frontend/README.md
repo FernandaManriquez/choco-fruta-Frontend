@@ -9,11 +9,6 @@ Sistema web full-stack para la gestión integral de una tienda virtual especiali
 
 ## 🚀 Inicio Rápido (Frontend)
 
-### Repositorios
-
-- Repositorio FrontEnd: https://github.com/TU_USUARIO/TU_REPO_FRONTEND
-- Repositorio Backend: https://github.com/TU_USUARIO/TU_REPO_BACKEND
-
 #### Instrucciones de instalación (Frontend)
 - `npm install`
 
@@ -211,7 +206,7 @@ git --version
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/choco-frutas.git
+git clone https://github.com/FernandaManriquez/choco-frutas.git
 cd choco-frutas
 ```
 
@@ -741,8 +736,9 @@ Este proyecto fue desarrollado con fines académicos para **DUOC UC**.
 ## 👥 Autores
 
 **Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- Email: tu.correo@duocuc.cl
+- GitHub: [Fernanda Manriquez y Catrina Corral](https://github.com/FernandaManriquez)
+- Email: Cat.corral@duocuc.cl
+        fe.manriquezm@duocuc.cl
 
 **Profesor Guía**
 - Email: vpobletel@profesor.duoc.cl
